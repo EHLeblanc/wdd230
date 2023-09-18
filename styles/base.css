@@ -4,13 +4,47 @@
 main {
 font-family: 'Times New Roman', Times, serif;    
 text-align: center;
-background-color: black; 
+ }
+header {
+    background-color: blueviolet;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    margin-left: 150px;
+    margin-right: -5px;
+    font-size:40px ;
 }
 cards {
 display: grid;
-text-align: center;
+text-align: left;
 font-family: 'Times New Roman', Times, serif;
 }
 sections {
 text-align: center;
 }
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    background-color: blue;
+    font-size:30px;
+    margin-left: 150px;
+}
+footer {
+    text-align: center;
+    background-color: gray;
+    margin-left: 150px;
+    font-size: 20px;
+
+    
+}
+ul {
+    text-align: left;
+    margin-left: 150px;
+    font-size: 25px;
+}
+nav {
+    text-align: center;
+}
+
