@@ -25,6 +25,16 @@
         <a href="">Site Plan</a>
         <a href="">Form</a>
     </nav>
+    <div class="herolabel">
+        <p>McAllen Temple</p>
+    </div>
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+            <img src="images/hero-large.webp" alt="McAllen Temple" width="1500" height="750">  
+        </picture>
+    </div>
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card1">
@@ -34,9 +44,10 @@
         <section class="card2">
             <h2>Information</h2>
             <p>Weather</p>
-            <p>Visits</p>
+            <p>Number of Visits: <span id="visits"></span></p>
         </section>
     </main>
+    <iframe src="https://maps.app.goo.gl/D2SQD4GG2jozxPuUA" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p>©2024 Eli LeBlanc TX</p>
         <script src="scripts/getdates.js"></script>

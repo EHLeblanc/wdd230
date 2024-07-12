@@ -13,6 +13,25 @@ header {
     max-width: 100%;  
     
 }
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 10px 10px 10px;
+    margin-top: 20px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
 nav{
     text-align: center;
     grid-column: 1/4;
