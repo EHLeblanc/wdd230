@@ -1,0 +1,31 @@
+
+main{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: grid;
+    background-color: #800080; 
+    grid-column: 1/4;
+    max-width: 100%;  
+    
+}
+nav{
+    text-align: center;
+    grid-column: 1/4;
+}
+
+body{
+    width: auto; margin: auto; background-color: aliceblue;
+    display: grid;
+    grid-template: auto 1fr auto /auto 1fr auto;
+    font-size:40px ;
+}
+
+footer{
+    justify-content: center;
+    padding-top: 500px;
+}
