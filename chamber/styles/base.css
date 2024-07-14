@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Oswald:wght@600&family=Poppins:wght@300&display=swap');
+header
+{
+    background-color: #2832C2;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+header img
+{
+    align-items: center;
+    padding: 10px;
+    float: left;
+    border-radius: 30px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 10px 10px 10px;
+    margin-top: 20px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+.navigation
+{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    margin:0 auto;
+    background-color: skyblue;
+    padding: 0;
+}
+.navigation li
+{
+    display: none;
+}
+.navigation li a
+{
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+
+}
+.navigation li a:hover
+{
+    background-color: #BDE0FE;
+}
+.open li
+{
+    display: block;
+    width: 100%;
+}
+.open li a
+{
+    display: block;
+}
+
+.button-box
+{
+    padding: 30px;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.join
+{
+    background-color: skyblue;
+    color: black;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 5px 10px;
+    margin-top: 90px;
+    border-radius: 5px;
+}
+.join:hover
+{
+    background-color: #EBF2FA;
+}
+
+#maincontent h2
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.4rem;
+    margin-left: 10px;
+}
+#event
+{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 30px; 
+    border: 3px solid skyblue;
+    font-family: 'Poppins', sans-serif;
+}
+#event h2
+{
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 2px solid black;
+    font-size: 2rem;
+
+}
+#event h3
+{
+    font-size: 1.4rem;
+    margin-left: 15px;
+}
+
+#weather
+{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 30px; 
+    border: 3px solid skyblue;
+    font-family: 'Poppins', sans-serif;
+}
+#weather h2
+{
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 2px solid black;
+    font-size: 2rem;
+}
+#weather p
+{
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+footer
+{
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #2832C2;
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+footer h3
+{
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+}
+footer img
+{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+#generalInformation img
+{
+    padding: 10px;
+    float: left;
+}
+#generalInformation p
+{
+    text-align: left;
+}
+#contactInformation
+{
+    font-size: 1.2rem;
+    text-align: center;
+}
+#projectInformation
+{
+    font-size: 1.2rem;
+    border-top: 2px solid gray;
+    text-align: center;
+}
+/*Discover Page*/
+
+#events
+{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 30px; 
+    border: 3px solid skyblue;
+    font-family: 'Poppins', sans-serif;
+}
+#events h2
+{
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 2px solid black;
+    font-size: 2rem;
+
+}
+#events p
+{
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+
+#population
+{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 30px; 
+    border: 3px solid skyblue;
+    font-family: 'Poppins', sans-serif;
+}
+#population h2
+{
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 2px solid black;
+    font-size: 2rem;
+}
+#population p
+{
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+#places
+{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 30px; 
+    border: 3px solid skyblue;
+    font-family: 'Poppins', sans-serif;
+}
+#places h2
+{
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 2px solid black;
+    font-size: 2rem;
+}
+#places p
+{
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+#about
+{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 30px; 
+    border: 3px solid skyblue;
+    font-family: 'Poppins', sans-serif;
+}
+#about h2
+{
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 2px solid black;
+    font-size: 2rem;
+}
+#about p
+{
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+#culture, #lastVisit
+{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 30px; 
+    border: 3px solid skyblue;
+    font-family: 'Poppins', sans-serif;
+}
+#culture h2
+{
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 2px solid black;
+    font-size: 2rem;
+}
+#culture p
+{
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+#lastVisit span
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    padding: 10px;
+}
+#images
+{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 30px; 
+    border: 3px solid skyblue;
+    font-family: 'Poppins', sans-serif;
+    
+}
+#images h2
+{
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 2px solid black;
+    font-size: 2rem;
+    text-align: left;
+}
+#images img
+{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+.container{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+#weather h3
+{
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    border-bottom: 2px solid black;
+    font-size: 1.4rem;
+}
+#weatherIcon
+{
+    float: left;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+#temperature, #weatherDescription
+{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    display: none;
+    padding: 10px;
+    background-color:#EBF2FA;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    z-index: 1;
+}
+
+.close-btn {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav .active {
+    background-color: #BDE0FE;
+}
