@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <span>
+            <h1>Eli LeBlanc</h1>
+            <img src="images/WhatsApp Image 2024-06-21 at 18.00.40_fc0d8634.jpg" alt="A picture of A MAN" width="150" height="150">
+        </span>
+    </header>
+    <header>
+        <nav>
+            <nav>
+                <button id="menu" aria-label="hamburgerButton"></button>
+                <ul class="navigation"
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="chamber/index.html">Chamber</a></li>
+                    <li> <a href="">Site Plan</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>    
+            </nav>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Simple Form</h1>
+        <form id="userForm" method="get" action="record.html">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required title="Password must be at least 8 characters long and can only be alphanumeric.">
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required title="Please enter a valid email address">
+
+            <label for="rating">Page Rating:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5" oninput="updateRatingValue(this.value)">
+            <span id="ratingValue">5</span>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>©2024 Eli LeBlanc TX</p>
+        <script src="scripts/getdates.js"></script>
+    </footer>
+</body>
+</html>

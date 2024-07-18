@@ -1,9 +1,14 @@
-
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 main{
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
 }
 /*.card
 {
@@ -36,7 +41,12 @@ header {
     display: flex;
     background-color: #800080; 
     align-items: center;
-    max-width: 100%;  
+    padding-left: 100px;
+    justify-content: center;  
+}
+.h1{
+    text-align: center;
+    padding-left: 800px;
     
 }
 #menu {
@@ -58,11 +68,33 @@ header {
 #menu.open::before {
 	content: "❌";
 }
-nav{
-    text-align: center;
-    grid-column: 1/4;
+.nav{
+    display: block;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    margin:0 auto;
+    background-color: aqua;
 }
+.navigation li
+{
+    display: none;
+}
+.navigation li a
+{
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
 
+}
+.navigation li a:hover
+{
+    background-color: #BDE0FE;
+}   
 body {
 	font-family: 'Poppins', sans-serif;
     margin: auto;
@@ -72,4 +104,9 @@ footer{
     justify-content: center;
     padding-top: 500px;
     text-align: center;
+}
+#lastModified
+{
+    padding-top: 0px;
+    color: black;
 }
