@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eli LeBlanc - WDD 230 - Web Frontend Development</title>
+    <meta property="og:title" content="Eli LeBlanc WDD230 web frontend development home page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://en.wikipedia.org/wiki/Alice,_Texas">
+    <meta property="og:url" content="https://github.com/EHLeblanc/wdd230-2">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <span>
+            <h1>Eli LeBlanc</h1>
+            <img src="images/WhatsApp Image 2024-06-21 at 18.00.40_fc0d8634.jpg" alt="A picture of A MAN" width="150" height="150">
+        </span>
+    </header>
+    <nav>
+        <button id="menu" aria-label="hamburgerButton"></button>
+        <ul class="navigation">
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="chamber/index.html">Chamber</a></li>
+            <li> <a href="">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>    
+    </nav>
+    
+    <main>
+        <section class="form-container">
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Join Us</legend>
+    
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+    
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+    
+                    <label for="title">Title/Position:</label>
+                    <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" title="Only alpha characters, hyphens, and spaces are allowed. Minimum 7 characters.">
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+    
+                    <label for="phone">Mobile Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+    
+                    <label for="organization">Business/Organization Name:</label>
+                    <input type="text" id="organization" name="organization" required>
+    
+                    <label for="membership">Membership Level:</label>
+                    <select id="membership" name="membership" required>
+                        <option value="NP">NP Membership (Non-profit, no fee)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+    
+                    <label for="description">Business/Organization Description:</label>
+                    <textarea id="description" name="description"></textarea>
+    
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+    
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+    
+            <aside class="membership-benefits">
+                <h2>Membership Benefits</h2>
+                <ul>
+                    <li><strong>NP Membership:</strong> No fee, access to special events.</li>
+                    <li><strong>Bronze Membership:</strong> Includes event discounts.</li>
+                    <li><strong>Silver Membership:</strong> Includes all Bronze benefits plus training.</li>
+                    <li><strong>Gold Membership:</strong> Includes all Silver benefits plus advertising and spotlight positions.</li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+    
+    <footer>
+        <p>©2024 Eli LeBlanc TX</p>
+        <script src="scripts/getdates.js"></script>
+    </footer>
+</body>
+</html>
