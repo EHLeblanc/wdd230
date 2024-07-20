@@ -16,10 +16,10 @@
 </head>
 <body>
     <header>
-        <span>
+        <div class="picturename">
             <h1>Eli LeBlanc</h1>
-            <img src="images/WhatsApp Image 2024-06-21 at 18.00.40_fc0d8634.jpg" alt="A picture of A MAN" width="150" height="150">
-        </span>
+            <img src="images/pictureman.jpg" alt="A picture of A MAN" width="150" height="150">
+        </div>
     </header>
     <nav>
         <button id="menu" aria-label="hamburgerButton"></button>
@@ -57,6 +57,7 @@
     
                     <label for="membership">Membership Level:</label>
                     <select id="membership" name="membership" required>
+                        <option value="" disabled selected>Select a membership level</option>
                         <option value="NP">NP Membership (Non-profit, no fee)</option>
                         <option value="Bronze">Bronze Membership</option>
                         <option value="Silver">Silver Membership</option>
@@ -83,6 +84,11 @@
             </aside>
         </section>
     </main>
+    
+    <script>
+        document.getElementById('timestamp').value = new Date().toISOString();
+    </script>
+    
     
     <footer>
         <p>©2024 Eli LeBlanc TX</p>
