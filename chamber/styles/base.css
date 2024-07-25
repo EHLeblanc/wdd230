@@ -185,7 +185,7 @@ footer h3
 footer img
 {
     width: auto;
-    height: auto;
+    height: 400px;
     object-fit: cover;
 }
 #generalInformation img
