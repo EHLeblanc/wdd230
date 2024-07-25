@@ -10,7 +10,7 @@ main{
     justify-items: center;
     align-items: center;
 }
-/*.card
+.card
 {
     border-radius: 30px;
     padding: 20px;
@@ -60,6 +60,8 @@ header {
 	top: 1rem;
 	right: 1rem;
 }
+
+
 
 #menu::before {
 	content: "☰";

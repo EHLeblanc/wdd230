@@ -6,14 +6,23 @@
     <title>Chamber Site</title>
     <meta property="og:title" content="Eli LeBlanc WDD230 web frontend development Chamber Site">
     <meta property="og:type" content="Chamber website">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="script" href="scripts/script.js">
+    <link rel="weather" href="">
     <meta property="og:image" content="https://en.wikipedia.org/wiki/Alice,_Texas">
     <meta property="og:url" content="https://github.com/EHLeblanc/wdd230-2">
     <link rel="icon" href="favicon (2).ico">
 </head>
 <body>
     <header>
-        <img src="images/logo.jpg" alt="Logo Image">
+        <img src="images/AliceIcon.jpg" alt="Logo Image">
         <h1>Alice,TX Chamber of Commerce</h1>
+        <h1>Member Directory</h1>
+        <button id="toggleView">Toggle View</button>
+    </header>
+    <main id="memberContainer"></main>
+    <script src="script.js"></script>
     </header>
     <main>
         <nav>
@@ -51,7 +60,7 @@
     </main>
     <footer>
     <section id="generalInformation">
-        <img src="images/logo.jpg" alt="Logo Image">
+        <img src="images/AliceIcon.jpg" alt="Logo Image">
         <h3>Alice, TX Chamber of Commerce</h3>
         <p>612 E Main St # S1, Alice, TX 78332</p>
     </section>
